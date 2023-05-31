@@ -23,6 +23,10 @@
     SKELETON
 -------------------------------------------------------------------*/
 
+:root {
+  --main-bg-color: #024730;
+}
+
 body {
     color: #999999;
     font-size: 14px;
@@ -338,7 +342,8 @@ a img.aligncenter {
     z-index: -1;
 }
 .navbar-dark .navbar-nav .nav-link.active{
-	color: #28a9e2;
+	color: var(--main-bg-color); 
+    /* var(--main-bg-color); */
 }
 .navbar-dark .navbar-nav .nav-link.active::after {
 	width: 100%;
@@ -348,11 +353,13 @@ a img.aligncenter {
 
 
 #mainNav.navbar-shrink .navbar-nav .nav-link{
-	color: #28a9e2;
+	color: var(--main-bg-color);
+     /* var(--main-bg-color); */
 }
 
 #mainNav.navbar-shrink .navbar-nav .nav-link::after{
-	background: #28a9e2;
+	background: var(--main-bg-color);
+    /* var(--main-bg-color); */
 }
 
 #mainNav.navbar-shrink .navbar-nav .nav-link.active{
@@ -497,7 +504,7 @@ xclip
     display: block;
     position: relative;
     overflow: hidden;
-    padding: 70px 0;
+    padding: 120px 0;
 }
 
 .noover {
@@ -714,7 +721,7 @@ xclip
 }
 
 .services-inner-box::after{
-	background: #28a9e2;
+	background: var(--main-bg-color);
 	width: 0px;
 	height: 0px;
 	content: "";
@@ -803,7 +810,7 @@ xclip
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: var(--main-bg-color);
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 100%;
@@ -1575,7 +1582,7 @@ hr.invis1 {
 }
 
 .filter-button-group button.active{
-	background: #28a9e2;
+	background: var(--main-bg-color);
 	color: #fff;
 	box-shadow: 2px 20px 45px 5px rgba(0,0,0,.2);	
 	border-radius: 100px 100px 0px 100px;
@@ -1642,7 +1649,7 @@ hr.invis1 {
 	position: absolute;
 	bottom: 5px;
 	right: 5px;
-	background: #28a9e2;
+	background: var(--main-bg-color);
 	color: #fff;
 	padding: 10px 15px;
 	text-align: center;
@@ -1719,7 +1726,7 @@ hr.invis1 {
 }
 .our-team .pic{
     border-top: none;
-    border-bottom: 5px solid #28a9e2;
+    border-bottom: 5px solid var(--main-bg-color);
     border-radius: 50% 50% 0 50%;
     overflow: hidden;
     transition: all 0.5s ease 0s;
@@ -1737,7 +1744,7 @@ hr.invis1 {
 .our-team .title{
     font-size: 22px;
     font-weight: 700;
-    color: #28a9e2;
+    color: var(--main-bg-color);
     text-transform: uppercase;
     margin: 0 0 5px 0;
 }
@@ -1760,10 +1767,10 @@ hr.invis1 {
     height: 35px;
     line-height: 35px;
     border-radius: 50%;
-    border: 1px solid #28a9e2;
+    border: 1px solid var(--main-bg-color);
     background: #fff;
     font-size: 17px;
-    color: #28a9e2;
+    color: var(--main-bg-color);
     text-align: center;
     transition: all 0.5s ease 0s;
 }
@@ -1800,7 +1807,7 @@ hr.invis1 {
 .pricingTable .title{
     font-size: 35px;
     font-weight: 600;
-    color: #28a9e2;
+    color: var(--main-bg-color);
     text-transform: uppercase;
     margin: 0 0 10px 0;
 }
@@ -1827,27 +1834,27 @@ hr.invis1 {
     position: relative;
     transition: all 0.3s ease 0s;
 }
-.pricingTable:hover .pricingTable-signup{ box-shadow: 0 0 10px #28a9e2; }
+.pricingTable:hover .pricingTable-signup{ box-shadow: 0 0 10px var(--main-bg-color); }
 .pricingTable .pricingTable-signup:hover{
     color: #ffffff;
     background: #fff;
-    box-shadow: 0 0 10px #28a9e2, 0 0 10px #1c142b inset;
+    box-shadow: 0 0 10px var(--main-bg-color), 0 0 10px #1c142b inset;
 }
-.pricingTable.blue .title{ color: #28a9e2; }
+.pricingTable.blue .title{ color: var(--main-bg-color); }
 .pricingTable.blue .pricingTable-signup{ background: #333333; }
-.pricingTable.blue:hover .pricingTable-signup{ box-shadow: 0 0 10px #28a9e2; }
+.pricingTable.blue:hover .pricingTable-signup{ box-shadow: 0 0 10px var(--main-bg-color); }
 .pricingTable.blue .pricingTable-signup:hover{
     color: #ffffff;
     background: #fff;
-    box-shadow:0 0 10px #28a9e2, 0 0 10px #1c142b inset;
+    box-shadow:0 0 10px var(--main-bg-color), 0 0 10px #1c142b inset;
 }
-.pricingTable.red .title{ color: #28a9e2; }
+.pricingTable.red .title{ color: var(--main-bg-color); }
 .pricingTable.red .pricingTable-signup{ background: #333333; }
-.pricingTable.red:hover .pricingTable-signup{ box-shadow: 0 0 10px #28a9e2; }
+.pricingTable.red:hover .pricingTable-signup{ box-shadow: 0 0 10px var(--main-bg-color); }
 .pricingTable.red .pricingTable-signup:hover{
     color: #ffffff;
     background: #fff;
-    box-shadow:0 0 10px #28a9e2, 0 0 10px #1c142b inset;
+    box-shadow:0 0 10px var(--main-bg-color), 0 0 10px #1c142b inset;
 }
 @media only screen and (max-width: 990px){
     .pricingTable{ margin-bottom: 30px; }
@@ -2279,7 +2286,7 @@ select.mobile-device {
 .footer {
     padding: 90px 0 80px !important;
     color: #999;
-    background-color: #1f1f1f;
+    background-color: var(--main-bg-color);
 }
 
 .footer .widget-title {
@@ -2351,7 +2358,7 @@ select.mobile-device {
 
 .copyrights {
     border-top: 1px dashed rgba(255, 255, 255, 0.1);
-    background-color: #1f1f1f;
+    background-color: var(--main-bg-color);
     box-sizing: border-box;
     width: 100%;
     text-align: center;
